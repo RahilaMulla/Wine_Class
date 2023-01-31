@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine_Type_Class</title>
+</head>
+<body style="background-color: hsl(196, 100%, 50%);">
+<!-- <body background-image="static/wine.jpg" background-repeat="no-repeat” background-size="cover”> -->
+    <!-- <center> -->
+    <center>
+    <h1> Wine Class Type Recognition</h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    <img src='static\wine.jpg'>
+    
+    <br><br>
+    <form method="POST" action ="/predict_class">
+        
+        <label>ALCOHOL:</label>
+        <input type="text" name ="alcohol">
+        <br>
+        <br>   						
+        <label>MALIC ACID:</label>
+        <input type="text" name ="malic_acid">
+        
+        <br>  
+        <br>        
+        <label>ASH:</label>
+        <input type="text" name ="ash">
+        <br>
+        <br>
+        <label>ALCALINITY_OF_ASH:</label>
+        <input type="text" name ="alcalinity_of_ash">
+        <br>
+        <br>
+        <label>MAGNESIUM:</label>
+        <input type="text" name ="magnesium">
+        <br>
+        <br>
+        <label>TOTAL_PHENOLS:</label>
+        <input type="text" name ="total_phenols">
+        <br>
+        <br>
+        <label>FLAVANOIDS:</label>
+        <input type="text" name ="flavanoids">
+        <br>
+        <br>
+        <label>NONFLAVANOID_PHENOL:</label>
+        <input type="text" name ="nonflavanoid_phenol">
+        <br>
+        <br>
+        <label>PROANTHOCYANINS:</label>
+        <input type="text" name ="proanthocyanins">
+        <br>
+        <br>
+        <label>COLAR_INTENSITY:</label>
+        <input type="text" name ="color_intensity">
+        <br>
+        <br>
+        <label>HUE:</label>
+        <input type="text" name ="hue">
+        <br>
+        <br>
+        <label>DILUTES_WINES:</label>
+        <input type="text" name ="diluted_wines">
+        <br>
+        <br>
+        <label>PROLINE:</label>
+        <input type="text" name ="proline">
+      
+        
+        <br>
+        <br>
+        <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+   
+    <br>
+    <br>
+    {{classes}}
+    <!-- </center>  -->
+</body>
+</html>
+
